@@ -3,8 +3,8 @@ import java.util.*;
 public class all_permutation {
     public static void main(String[] args) {
         String str="abc";
-        //permutation(str,"");
-        findpermuataions("abcd");
+        permutation(str,"");
+        //findpermuataions("abcd");
     }
 
 
