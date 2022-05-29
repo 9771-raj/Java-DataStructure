@@ -2,7 +2,7 @@ package permutation;
 import java.util.*;
 public class next_permutation {
     public static void main(String[] args) {
-        int[] arr={3,4,2,1,5,6};
+        int[] arr={3,4,2,1,8,6};
         if (arr==null || arr.length<=1){
             System.out.println(Arrays.toString(arr));
         }

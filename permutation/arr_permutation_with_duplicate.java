@@ -2,7 +2,7 @@ package permutation;
 import java.util.*;
 public class arr_permutation_with_duplicate {
     public static void main(String[] args) {
-        int[] nums={1,2,2,2};
+        int[] nums={1,3,2};
         List<List<Integer>> result=new ArrayList<>();
         solution(nums,result,0);
         System.out.println(result);
