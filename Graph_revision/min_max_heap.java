@@ -28,10 +28,11 @@ public class min_max_heap {
         Map<Integer,Integer> hash=new HashMap<>();
         int[] nums={1,2,3,1,3,4,5,4,6,7,2,1,3,5};
         for (int i = 0; i < nums.length; i++) {
-            hash.put(arr[i],hash.getOrDefault(nums[i],0)+1);
+            hash.put(nums[i],hash.getOrDefault(nums[i],0)+1);
         }
         for (Map.Entry<Integer,Integer> i:hash.entrySet()){
-            pq_map.offer(i);
+            pq_map.add(i);
         }
+        System.out.println(pq_map);
     }
 }
