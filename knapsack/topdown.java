@@ -3,9 +3,9 @@ package knapsack;
 public class topdown {
 
 	public static void main(String[] args) {
-		int[] weight= {1,2,3,4,5};
-		int[] profit= {2,1,5,2,3};
-		int bagwt=9;
+		int[] weight= {1,2,3};
+		int[] profit= {4,5,1};
+		int bagwt=4;
 		int n=weight.length+1;
 		int w=bagwt+1;
 		int[][] t=new int[n][w];

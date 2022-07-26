@@ -3,8 +3,8 @@ package knapsack;
 public class count_subset_sum {
 
 	public static void main(String[] args) {
-		int[] arr= {3,1,1,2,3,4,5};
-		int sum=5;
+		int[] arr= {4,5,1};
+		int sum=4;
 		int ans=solution(arr,sum);
         System.out.println(ans);
 	}

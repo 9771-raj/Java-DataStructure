@@ -1,5 +1,5 @@
 package Graph;
-import java.util.*;
+import java.util.*;    // DFS
 public class cycle_detect_directed {
     public static void main(String[] args) {
         ArrayList<ArrayList<Integer>> graph=new ArrayList<>();

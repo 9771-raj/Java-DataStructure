@@ -34,5 +34,6 @@ public class min_max_heap {
             pq_map.add(i);
         }
         System.out.println(pq_map);
+        System.out.println(pq_map.peek());
     }
 }

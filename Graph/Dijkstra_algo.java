@@ -56,7 +56,7 @@ public class Dijkstra_algo {
                 if (distance[val]+nxt.weight<distance[nxt.dest]){
                     distance[nxt.dest]=distance[val]+nxt.weight;
                     pq.add(nxt);
-                }
+                }// Write your code here// Write your code here
             }
         }
     }

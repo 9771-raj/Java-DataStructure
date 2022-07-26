@@ -22,6 +22,7 @@ public class Bottom_view {
         root.right.left.left.left=new TreeNode(7);
 
         ArrayList<Integer> ans=bottom_view(root);
+
         System.out.println(ans);
     }
 
@@ -51,4 +52,6 @@ public class Bottom_view {
         }
         return ans;
     }
+
+
 }

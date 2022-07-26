@@ -3,7 +3,7 @@ package Sliding_window;
 public class min_window_sum {
     public static void main(String[] args) {
         int[] arr={2,3,4,0,6,7,8};
-        int k=3;
+        int k=1;
         int sum=0;
         int ans=solution(arr,sum,k);
         System.out.println(ans);

@@ -3,8 +3,8 @@ package UnboundedKnapsack;
 public class coin_change_ways {
 
 	public static void main(String[] args) {
-		int[] coin= {1,2,3,4,5};
-		int sum=5;
+		int[] coin= {1,2,5};
+		int sum=8;
 		int ans=solution(coin,sum);
         System.out.println("Number of ways for sum using these coin array = "+ans);
 	}
