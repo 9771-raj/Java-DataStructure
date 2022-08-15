@@ -15,4 +15,10 @@ public class product_arr_except_self {
         }
         System.out.println(Arrays.toString(output));
     }
+
+    private void approach2(int[] arr){
+        int[] left=new int[arr.length];
+        int[] right=new int[arr.length];
+
+    }
 }
