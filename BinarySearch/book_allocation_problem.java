@@ -3,9 +3,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 public class book_allocation_problem {
     public static void main(String[] args) {
-        int[] arr={10,20,30,40}; // number of pages in ith book
-        int n=4; // number of book
-        int m=2; // number of students
+        int[] arr={20,30,40,50,60}; // number of pages in ith book
+        int n=5; // number of book
+        int m=3; // number of students
 
         int left=0;
         int sum=0;

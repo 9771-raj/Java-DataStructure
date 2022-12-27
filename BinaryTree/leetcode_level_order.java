@@ -23,9 +23,9 @@ public class leetcode_level_order {
         root.right.right=new TreeNode(5);
         root.right.right.left=new TreeNode(6);
         inorder(root);
-//        ArrayList<ArrayList<Integer>> result=new ArrayList<>();
-//        level_order(root,result);
-//        System.out.println(result);
+        ArrayList<ArrayList<Integer>> result=new ArrayList<>();
+        level_order(root,result);
+        System.out.println(result);
     }
 
     private static void level_order(TreeNode root, ArrayList<ArrayList<Integer>> result) {

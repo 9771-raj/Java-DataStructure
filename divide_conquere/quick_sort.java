@@ -1,26 +1,28 @@
 package divide_conquere;
 import java.util.*;
-public class quick_sort {
+public class Quick_sort {
     public static void main(String[] args) {
-        int[] arr={6,8,9,1,1,9,2,5};
-        sort(arr,0,arr.length-1);
+        int[] arr={1, 4, 2, 4, 2, 4, 1, 2, 4, 1, 2, 2, 2, 2, 4, 1, 4, 4, 4};
+
+        QuickSort(arr,0,arr.length-1);
         System.out.println(Arrays.toString(arr));
 
     }
-    private static void sort(int[] arr,int start,int end){
-        if(start>=end) return;
+
+    private static void QuickSort(int[] arr,int start,int end) {
+        if (start>=end) return;
+        int mid=start+(end-start)/2;
         int i=start;
         int j=end;
-        int m=start+(end-start)/2;
-        int pivot=arr[m];
-        while(i<=j){
+        int pivot=arr[mid];
+        while (i<=j){
             while (arr[i]<pivot){
                 i++;
             }
             while (arr[j]>pivot){
                 j--;
             }
-            if(i<=j){
+            if (i<=j){
                 int temp=arr[i];
                 arr[i]=arr[j];
                 arr[j]=temp;
@@ -28,8 +30,7 @@ public class quick_sort {
                 j--;
             }
         }
-        // recursion sort
-        sort(arr,start,j);
-        sort(arr,i,end);
+        QuickSort(arr,start,j);
+        QuickSort(arr,i,end);
     }
 }

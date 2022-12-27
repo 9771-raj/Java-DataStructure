@@ -2,7 +2,7 @@ package permutation;
 import java.util.*;
 public class next_permutation {
     public static void main(String[] args) {
-        int[] arr={3,4,2,1,8,6};
+        int[] arr={3,4,2,1,8,2,3,9,9,9,9,6};
         if (arr==null || arr.length<=1){
             System.out.println(Arrays.toString(arr));
         }
@@ -13,8 +13,11 @@ public class next_permutation {
         if (i>=0){
             int j=arr.length-1;
             while (arr[j]<=arr[i]) j--;
+            System.out.println(i+" "+ j);
             swap(arr,i,j);
         }
+        System.out.println(Arrays.toString(arr));
+
         reverse(arr,i+1,arr.length-1);
         System.out.println(Arrays.toString(arr));
 

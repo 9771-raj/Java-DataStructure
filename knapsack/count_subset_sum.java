@@ -3,8 +3,8 @@ package knapsack;
 public class count_subset_sum {
 
 	public static void main(String[] args) {
-		int[] arr= {4,5,1};
-		int sum=4;
+		int[] arr= {1,2,3,4,5,6};
+		int sum=7;
 		int ans=solution(arr,sum);
         System.out.println(ans);
 	}
@@ -19,6 +19,12 @@ public class count_subset_sum {
 				if(i==0) dp[i][j]=0;
 				if(j==0) dp[i][j]=1;
 			}
+		}
+		for(int i=0;i<n;i++) {
+			for(int j=0;j<w;j++) {
+				System.out.print(dp[i][j]+" ");
+			}
+			System.out.println();
 		}
 		//choice diagram
 		for(int i=1;i<n;i++) {

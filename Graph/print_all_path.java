@@ -34,4 +34,7 @@ public class print_all_path {
         }
         visited[src]=false;
     }
+
+    // if there is matrix type graph
+
 }

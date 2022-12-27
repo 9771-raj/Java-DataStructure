@@ -34,7 +34,7 @@ public class Dijkstra_algo {
         //graph.get(5).add(new tuple(4,1));
         //graph.get(6).add(new tuple(4,6));
 
-        //System.out.println(graph);
+
         int[] distance=new int[graph.size()];
         Arrays.fill(distance,Integer.MAX_VALUE);
         int src=0;

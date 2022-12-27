@@ -21,6 +21,7 @@ public class all_subsets_sum {
             return;
         }
         all_subsets_Sum(arr,n,ind+1,sum+arr[ind],ans);
+        System.out.println(sum);
         all_subsets_Sum(arr,n,ind+1,sum,ans);
 
     }
